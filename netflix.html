@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Netflix India-Watch TV Shows Online</title>
+    <link rel="shortcut icon" href="Netflix icon.png">
+    <style>
+        body {
+            background-color: black;
+            color: #FFFFFF;
+            transform: translate(-1%, -1%);
+            font-family: sans-serif;
+        }
+        
+        .front_page h1 {
+            color: #FFFFFF;
+            position: absolute;
+            top: 30%;
+            left: 28%;
+            font-size: 50px;
+            font-weight: 500;
+            font-family: sans-serif;
+            width: 600px;
+            text-align: center;
+        }
+        
+        .logo {
+            color: red;
+            font-family: sans-serif;
+            position: absolute;
+            font-weight: 900;
+            text-transform: uppercase;
+            top: 0%;
+            left: 5%;
+            font-size: 20px;
+            overflow: hidden;
+        }
+        
+        #one {
+            width: 1400px;
+            overflow: hidden;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        
+        button {
+            background-color: red;
+            color: #FFFFFF;
+            position: absolute;
+            font-size: 18px;
+            right: 5%;
+            top: 3%;
+            padding: 7px 16px;
+            border-radius: 4px;
+            outline: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        
+        select {
+            position: absolute;
+            color: white;
+            background-color: transparent;
+            top: 3.03%;
+            right: 14%;
+            border-radius: 2px;
+            padding: 7px 7px;
+            border: 2px solid #FFFFFF;
+            font-size: 15px;
+        }
+        
+        select option {
+            background-color: grey;
+            color: white;
+            font-size: 15px;
+        }
+        
+        .input_box input[type="text"] {
+            padding: 20px 150px;
+            position: absolute;
+            top: 67%;
+            left: 25%;
+            text-align: left;
+            font-size: 20px;
+            outline: none;
+        }
+        
+        .input_box_2 input[type="text"] {
+            padding: 20px 150px;
+            position: absolute;
+            top: 473%;
+            left: 25%;
+            text-align: start;
+            font-size: 20px;
+            outline: none;
+        }
+        
+        button2 {
+            background-color: red;
+            position: absolute;
+            top: 67%;
+            left: 59.5%;
+            color: white;
+            padding: 21px 80px;
+            outline: none;
+            border: 1px solid black;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        button3 {
+            background-color: red;
+            position: absolute;
+            top: 473%;
+            left: 59.5%;
+            color: white;
+            padding: 21px 80px;
+            outline: none;
+            border: 1px solid black;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        #old {
+            position: absolute;
+            font-family: sans-serif;
+            top: 49%;
+            left: 35%;
+            font-size: 27px;
+        }
+        
+        #new {
+            position: absolute;
+            font-family: sans-serif;
+            top: 59%;
+            left: 27%;
+            font-size: 20px;
+        }
+        
+        #video1 {
+            position: absolute;
+            top: 110%;
+            right: 10%;
+        }
+        
+        #image2 {
+            position: absolute;
+            top: 97%;
+            right: 3.3%;
+        }
+        
+        #second {
+            font-size: 50px;
+            position: absolute;
+            top: 115%;
+            left: 10%;
+        }
+        
+        #second1 {
+            font-size: 25px;
+            position: absolute;
+            top: 125%;
+            left: 10%;
+            width: 500px;
+        }
+        
+        .third_page #third_page_image {
+            position: absolute;
+            top: 165%;
+            left: 0%;
+        }
+        
+        .box1 {
+            position: absolute;
+            top: 210%;
+            left: 10%;
+            height: 90px;
+            width: 370px;
+            border: 1px solid #FFFFFF;
+            background-color: black;
+            border-radius: 10px;
+        }
+        
+        #third3 {
+            position: absolute;
+            font-size: 17px;
+            top: 213%;
+            left: 17%;
+            font-family: sans-serif;
+        }
+        
+        #fourth {
+            position: absolute;
+            top: 250%;
+            font-size: 50px;
+            left: 10%;
+        }
+        
+        #fifth {
+            position: absolute;
+            top: 312%;
+            font-size: 50px;
+            right: 11%;
+            width: 500px;
+        }
+        
+        .page_box1 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 1400px;
+            height: 8px;
+            top: 99%;
+        }
+        
+        .page_box2 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 1400px;
+            height: 8px;
+            top: 167%;
+        }
+        
+        .page_box3 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 1400px;
+            height: 8px;
+            top: 230%;
+        }
+        
+        .column_box1 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 1400px;
+            height: 8px;
+            top: 300%;
+        }
+        
+        .column_box2 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 1400px;
+            height: 8px;
+            top: 370%;
+        }
+        
+        #sixth {
+            position: absolute;
+            top: 375%;
+            left: 25%;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .row_box1 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 1400px;
+            height: 8px;
+            top: 490%;
+        }
+        
+        .freq_1 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 800px;
+            height: 80px;
+            top: 395%;
+            left: 20%;
+            cursor: pointer;
+        }
+        
+        .freq_1 .freq_1_1 {
+            font-size: 26px;
+            font-weight: normal;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+        }
+        
+        .freq_2 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 800px;
+            height: 80px;
+            top: 406%;
+            left: 20%;
+            cursor: pointer;
+        }
+        
+        .freq_2 .freq_2_2 {
+            font-size: 26px;
+            font-weight: normal;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+        }
+        
+        .freq_3 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 800px;
+            height: 80px;
+            top: 417%;
+            left: 20%;
+            cursor: pointer;
+        }
+        
+        .freq_3 .freq_3_3 {
+            font-size: 26px;
+            font-weight: normal;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+        }
+        
+        .freq_4 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 800px;
+            height: 80px;
+            top: 428%;
+            left: 20%;
+            cursor: pointer;
+        }
+        
+        .freq_4 .freq_4_4 {
+            font-size: 26px;
+            font-weight: normal;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+        }
+        
+        .freq_5 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 800px;
+            height: 80px;
+            top: 439%;
+            left: 20%;
+            cursor: pointer;
+        }
+        
+        .freq_5 .freq_5_5 {
+            font-size: 26px;
+            font-weight: normal;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+        }
+        
+        .freq_6 {
+            position: absolute;
+            background-color: rgb(49, 46, 46);
+            width: 800px;
+            height: 80px;
+            top: 450%;
+            left: 20%;
+            cursor: pointer;
+        }
+        
+        .freq_6 .freq_6_6 {
+            font-size: 26px;
+            font-weight: normal;
+            position: absolute;
+            top: 12%;
+            left: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="one" src="Netflix 1.jpg" style="opacity:30%;">
+    <div class="logo">
+        <h1>Netflix</h1>
+    </div>
+    <select name="Language">
+        <option >English</option>
+        <option >हिन्दी</option>
+      </select>
+    <button>Sign in</button>
+    <div class="front_page">
+        <h1>
+            <b>Unlimited movies, TV shows and more.</b></h1>
+    </div>
+    <p id="old">Watch anywhere. Cancel anytime.</p>
+    <h1 id="second">Enjoy on your TV.</h1>
+    <p id="second1">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
+    <div class="input_box">
+        <input type="text" placeholder="Email address">
+        <button2>Get Started</button2>
+    </div>
+    <p id="new"> Ready to watch? Enter your email to create or restart your membership.</p>
+    <video id="video1" playsinline autoplay muted loop style=" float:right; width:468px;">
+    <source src="netflix3.m4v " type="video/m4v ">
+    <source src="netflix3.m4v " type="video/ogg "> 
+    </video>
+    <img id="image2" src="netflix 8.png">
+    <div class="third_page">
+        <img id="third_page_image" src="Netflix9.jpg">
+        <img style="position:absolute;top:211%;left:12%;width:50px;z-index:1;" src=" Netflix10.png ">
+        <h1 style="position:absolute;top:180%;right:6%;font-size:50px;width:550px; ">Download your shows to watch offline.</h1>
+        <p style="position:absolute;top:200%;right:2%;font-size:25px;width:600px; "> Save your favourites easily and always have something to watch.</p>
+    </div>
+    <div class="box1"></div>
+    <h1 id="third3">
+        Stranger Things</h1>
+    <h1 id="fourth">Watch everywhere.</h1>
+    <p style="position:absolute;top:215%;left:17%;color:rgb(13, 122, 212);">Downloading...</p>
+    <p style="position:absolute;top:260%;left:10%;font-size:25px;width:500px;">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+    </p>
+    <video id="video2" playsinline autoplay muted loop style=" position:absolute;top:240%;right:10%;width:350px;">
+        <source src="netflix 6.m4v" type="video/m4v ">
+        <source src="netflix 6.m4v" type="video/ogg "> 
+    </video>
+    <img style="position:absolute;top:236%;right:2%;width:42%;" src="Netflix13.png">
+    <img style="position:absolute;top:300%;left:2%;" src="Netflix 7.png">
+    <h1 id="fifth">Create profiles for children.</h1>
+    <p style="position:absolute;top:330%;right:11%;font-size:25px;width:500px;">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+    <div class=page_box1></div>
+    <div class=page_box2></div>
+    <div class=page_box3></div>
+    <div class=column_box1></div>
+    <div class=column_box2></div>
+    <div class="row_box1"></div>
+    <p id="sixth">Frequently Asked Questions</p>
+    <div class="freq_1">
+        <h1 class="freq_1_1">What is Netflix?</h1>
+        <img style="position:absolute;right:3%;top:30%;" src=" plus-icon.png "> </div>
+    <div class="freq_2 ">
+        <h1 class="freq_2_2 ">How much does Netflix cost?</h1>
+        <img style="position:absolute;right:3%;top:30%;" src=" plus-icon.png ">
+    </div>
+    <div class="freq_3 ">
+        <h1 class="freq_3_3 ">Where can I watch?</h1>
+        <img style="position:absolute;right:3%;top:30%;" src=" plus-icon.png ">
+    </div>
+    <div class="freq_4 ">
+        <h1 class="freq_4_4 ">How do I cancel?</h1>
+        <img style="position:absolute;right:3%;top:30%;" src=" plus-icon.png ">
+    </div>
+
+    <div class="freq_5 ">
+        <h1 class="freq_5_5 ">What can I watch on Netflix?</h1>
+        <img style="position:absolute;right:3%;top:30%;" src=" plus-icon.png ">
+    </div>
+    <div class=" freq_6 ">
+        <h1 class="freq_6_6 ">Is Netflix good for kids?</h1>
+        <img style="position:absolute;right:3%;top:30%;" src=" plus-icon.png ">
+    </div>
+    <p style="font-size:20px;position:absolute;top:465%;left:27%;"> Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="input_box_2">
+        <input type="text" placeholder="Email address">
+
+        <button3>Get Started <i class="fas fa-angle-right"></i></button3>
+
+    </div>
+
+</body>
+
+</html>
